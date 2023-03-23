@@ -1,6 +1,9 @@
 'use strict'
 
-import{contatos} from "./contatos.js"
+// import{contatos} from "./contatos.js"
+import{preencherDados} from "./postman.js"
+
+const contatos = await preencherDados('1')
 
 const criarHeader = (indice) => {
     const header = document.createElement('div')
